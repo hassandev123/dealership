@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family:"Nexa Bold";
+    src: url('fonts/NexaBold/Nexa Bold.otf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color:#082571 ;
+}
+.container{
+    max-width: 450px;
+}
+.title a{
+    border-radius: 10px;
+    background-color:#F9E900 ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding:10px 70px;
+}
+.quotes-heading{
+    border-bottom: 1px solid #3F60B5 ;
+}
+.quote-user{
+    font-family: 'Lato', sans-serif;
+}
+.quotes-heading h2{
+    text-align: start;
+    font-family: "Nexa Bold", sans-serif;
+}
+.quotes-heading p{
+    text-align: end;
+    font-family: 'Lato', sans-serif;
+}
+.quote-list-item a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.quote-list-item p{
+    margin-bottom: 0;
+}
+.quote-icon{
+    text-align: end;
+}
+.privacy{
+    padding-top: 50px;
+    border-bottom:1px solid #3F60B5 ;
+}
+.privacy-heading{
+    color: #FFFFFF;
+    font-family: "Nexa Bold", sans-serif;
+}
+.content{
+background: linear-gradient(100.25deg, #3F60B5 55.07%, #15378E 98.96%);
+}
+.loan{
+    color: #0DCA6F;
+}
+.loan-date{
+    color: #FFFFFF;
+}
+.content i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.footer-links{
+    background: #1D3E93;
+}
+.footer-icon:hover{
+    border-top: 2px solid  #F9E900;
+    color: #F9E900 !important;
+}
+.footer-icon:hover a , .footer-icon:hover a i{
+    color: #F9E900 !important;
+}
+
+/*============================result page css=====================================*/
+.timeline {
+position: relative;
+    padding-top:40px ;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.timeline .row{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #F9E900;
+}
+.circle1, .circle2, .circle3,.circle4{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #F9E900;
+    color: #F9E900;
+    border-radius: 50px;
+    margin-top: -8px;
+    padding: 0;
+    text-align: center;
+}
+.heading-first h2{
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 26px;
+}
+.heading-first span{
+    text-align: end;
+    opacity: 0.5;
+}
+.heading-link a p{
+    color:#F9E900 ;
+    text-decoration: #F9E900 underline;
+    font-size: 14px;
+}
+.income-input label{
+    color: #F9E900;
+    font-size: 14px;
+}
+.income-input input{
+    border: transparent;
+    border-bottom:1px solid #3560B5;
+    background: transparent;
+    color: #FFFFFF;
+    /*padding-left:15px ;*/
+}
+.income-input input::placeholder{
+    color:#3F60B5 ;
+}
+.income-input input:focus-visible{
+    outline: transparent;
+}
+.car-specifications{
+   background: #1D3E93;
+    border-radius: 10px;
+}
+.car-name{
+    font-size: 14px;
+}
+.car-speed{
+    float: left;
+    font-size: 12px;
+}
+.car-modal{
+    float: right;
+    font-size: 12px;
+}
+.car-details{
+    position: relative;
+}
+.car-details img{
+    position: absolute;
+    top: -60px;
+    right: -2px;
+}
+.car-price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #F9E900;
+    margin-bottom: 0;
+}
+.accordion{
+    margin-bottom: 10px;
+    border: 1px solid #1D3E93;
+    border-radius: 10px;
+}
+.acc-img{
+    width: 40px;
+    height: 40px;
+    background: #F9E900;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-header {
+    position: relative;
+    background-color: #1D3E93;
+    border-radius:10px 10px 0 0;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active > .acc-img {
+    transform: rotate(180deg);
+}
+.panel {
+    border-radius: 0 0 10px 10px;
+    padding: 0 18px;
+    display: none;
+    background-color: #1D3E93;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+.panel-heading{
+    color: #F9E900;
+}
+.acc-icons{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.f-contact{
+    font-size: 12px;
+}
+.text-alert{
+    color: #FF6948;
+}
+
+/*==========================================login page css================================*/
+.login-form{
+    max-width:400px ;
+    display: block;
+    margin: auto;
+}
+.login-fields {
+    margin: 0;
+    padding: 0;
+}
+.login-main-heading{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.login-main-heading h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-family: "Nexa Bold", sans-serif;
+}
+.login-main-heading h2{
+    margin-top: 0;
+    font-size: 37px;
+    font-weight: 600 !important;
+    font-family: "Nexa Bold", sans-serif;
+}
+.login-fields label{
+    color: #cfdee7;
+}
+.login-input{
+    border: transparent;
+    border-bottom:1px solid #3560B5;
+    background: transparent;
+    color: #FFFFFF;
+    /*padding-left:15px ;*/
+}
+.login-input::placeholder{
+    color:#3F60B5 ;
+}
+input:focus {
+    outline: transparent;
+    background: transparent;
+}
+.login-submit{
+    background: #F9E900;
+    text-align: center;
+    font-weight: 600;
+    color: #082571;
+    border-radius: 12px;
+}
+.forgot-password{
+    padding-top: 12px;
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+.register-button{
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: 600;
+    color: #082571;
+    background:#FFFFFF ;
+    border-radius: 12px;
+}
+.footer-line{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+}
+
+

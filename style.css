@@ -1,0 +1,547 @@
+/*!
+Theme Name: Selectfi
+Theme URI: https://forcoda.com/
+Author: Sahil Kanwar
+Author URI: https://forcoda.com/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: selectfi
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+selectfi is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family:"Nexa Bold";
+    src: url('fonts/NexaBold/Nexa Bold.otf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color:#082571 !important ;
+}
+/*.container{
+    max-width: 450px;
+}*/
+.title{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
+.title a{
+    font-size: 18px;
+    border-radius: 17px;
+    background-color:#F9E900 ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding:10px 70px;
+}
+.title a:hover{
+    background-color:#FFFFFF ;
+}
+.quotes{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+.quotes-heading{
+    border-bottom: 1px solid #3F60B5 ;
+}
+.quote-user{
+    font-size:20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+.quote-date{
+    font-size: 16px;
+    font-weight: 600;
+}
+.quote-icon{
+    font-size: 18px;
+}
+.quotes-heading h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: start;
+    font-family: "Nexa Bold", sans-serif;
+}
+.quotes-heading p{
+    font-size: 18px;
+    color: #F9E900;
+    font-weight: 600;
+    text-align: end;
+    font-family: 'Lato', sans-serif;
+}
+.quote-list-item a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.quote-list-item p{
+    margin-bottom: 0;
+}
+.quote-icon{
+    text-align: end;
+}
+.privacy{
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    padding-top: 50px;
+    border-bottom:1px solid #3F60B5 ;
+}
+.privacy-heading{
+    font-size:26px;
+    font-weight: 700;
+    line-height:26px; 
+    color: #FFFFFF;
+    font-family: "Nexa Bold", sans-serif;
+}
+.privacy-slider{
+    margin-left: 1.5rem;
+}
+.content{
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem;
+background: linear-gradient(100.25deg, #3F60B5 55.07%, #15378E 98.96%);
+}
+.carousel-heading{
+    font-size: 18px;
+    font-weight: 700;
+}
+.loan{
+    font-weight: 700;
+    text-transform:capitalize;
+    color: #0DCA6F;
+}
+.loan-date{
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.content i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.footer-links{
+    background: #1D3E93;
+}
+.footer-icon{
+    border-top: 2px solid transparent;
+}
+.footer-icon:hover{
+    border-top: 2px solid  #F9E900;
+    color: #F9E900 !important;
+}
+.footer-icon a , .footer-icon a i{
+    font-size: 14px;
+}
+.footer-icon:hover a , .footer-icon:hover a i{
+    color: #F9E900 !important;
+} 
+/*============================result page css=====================================*/
+.timeline {
+position: relative;
+    padding-top:40px ;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.timeline .row{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #F9E900;
+    position: relative;
+}
+.timeline .row .col-4{
+    border-top: 2px solid #F9E900;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.timeline .row .first-timeline::before{
+      padding: unset !important;
+    content: "";
+    width: 14px !important ;
+    height: 14px;
+    background: #F9E900;
+    color: #F9E900;
+    border-radius: 50px;
+    margin-top: -8px !important;
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+/* .first-timeline::before{ */
+    /* padding: unset !important; */
+    /* content: ""; */
+    /* width: 14px !important ; */
+    /* height: 14px; */
+    /* background: #F9E900; */
+    /* color: #F9E900; */
+    /* border-radius: 50px; */
+    /* margin-top: -8px !important; */
+    /* padding: 0; */
+    /* text-align: center; */
+
+/* } */
+.multipage-timeline{
+    border: transparent !important;
+}
+
+.last-timeline{
+    display: flex;
+    justify-content: end;
+    border-top: 2px dashed #F9E900 !important;
+}
+.second-last-timeline{
+    display: flex;
+    justify-content: end;
+    border-top: 2px dashed #F9E900 !important;
+}
+.last-timeline .circle4{
+    padding: unset !important;
+    content: "";
+    width: 14px !important ;
+    height: 14px;
+    background: #082571;
+    border: 2px solid #F9E900;
+    color: #F9E900;
+    border-radius: 50px;
+    margin-top: -8px !important;
+    padding: 0;
+    text-align: center; 
+}
+.second-last-timeline .circle3{
+    padding: unset !important;
+    content: "";
+    width: 14px !important ;
+    height: 14px;
+    background: #082571;
+    border: 2px solid #F9E900;
+    color: #F9E900;
+    border-radius: 50px;
+    margin-top: -8px !important;
+    padding: 0;
+    text-align: center; 
+}
+.circle1, .circle2, .circle3,.circle4{
+	padding: unset !important;
+    content: "";
+    width: 14px !important ;
+    height: 14px;
+    background: #F9E900;
+    color: #F9E900;
+    border-radius: 50px;
+    margin-top: -8px !important;
+    padding: 0;
+    text-align: center;
+}
+.heading-first h2{
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+.heading-first span{
+    font-size: 12px;
+    text-align: end;
+    opacity: 0.5;
+}
+.heading-link a p{
+    color:#F9E900 ;
+    text-decoration: #F9E900 underline;
+    font-size: 16px;
+}
+.income-input label{
+    color: #F9E900;
+    font-size: 16px;
+}
+.income-input input{
+    border: transparent;
+    border-bottom:1px solid #3560B5;
+    background: transparent;
+    color: #FFFFFF;
+    /*padding-left:15px ;*/
+}
+.income-input input::placeholder{
+    color:#3F60B5 ;
+}
+.income-input input:focus-visible{
+    outline: transparent;
+}
+.car-specifications{
+   background: #1D3E93;
+    border-radius: 10px;
+}
+.car-name{
+    font-size: 14px;
+}
+.car-speed{
+    float: left;
+    font-size: 12px;
+}
+.car-modal{
+    float: right;
+    font-size: 12px;
+}
+.car-details{
+    position: relative;
+}
+.car-details img{
+    position: absolute;
+    top: -60px;
+    right: -2px;
+}
+.car-price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #F9E900;
+    margin-bottom: 0;
+}
+.accordion{
+    margin-bottom: 10px;
+    border: 1px solid #1D3E93;
+    border-radius: 10px;
+}
+.acc-img{
+    width: 40px !important;
+    height: 40px;
+    background: #F9E900;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-header {
+    position: relative;
+    background-color: #1D3E93;
+    border-radius:10px 10px 0 0;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.fs-7{
+    font-size: 18px !important;
+}
+.fs-9{
+    font-size: 14px !important;
+}
+.active > .acc-img {
+    transform: rotate(180deg);
+}
+.panel {
+    border-radius: 0 0 10px 10px;
+    padding: 0 18px;
+    display: none;
+    background-color: #1D3E93;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+.panel-heading{
+    color: #F9E900;
+}
+.acc-icons{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.f-contact{
+    font-size: 12px;
+}
+.text-alert{
+    color: #FF6948;
+}
+
+/*==========================================login page css================================*/
+.login-form{
+    max-width:400px ;
+    display: block;
+    margin: auto;
+}
+.form-label{
+    font-size: 18px;
+}
+.login-fields {
+    margin: 0;
+    padding: 0;
+}
+.login-main-heading{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.login-main-heading h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-family: "Nexa Bold", sans-serif;
+}
+.login-main-heading h2{
+    margin-top: 0;
+    font-size: 60px;
+    font-weight: 600 !important;
+    font-family: "Nexa Bold", sans-serif;
+}
+.login-fields label{
+    color: #cfdee7;
+}
+.login-input{
+    border: transparent;
+    border-bottom:1px solid #3560B5;
+    background: transparent;
+    color: #FFFFFF;
+    /*padding-left:15px ;*/
+}
+.login-input::placeholder{
+    color:#3F60B5 ;
+}
+input:focus {
+    outline: transparent;
+    background: transparent;
+}
+.login-submit{
+    background: #F9E900 !important;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #082571 !important;
+    border-radius: 17px !important;
+}
+.login-submit:hover{
+    background-color: #FFFFFF !important;
+}
+.forgot-password{
+    padding-top: 12px;
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+.register-button{
+    margin-bottom: 100px !important;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #082571 !important;
+    background:#F9E900 !important;
+    border-radius: 17px !important;
+}
+.register-button:hover{
+    background-color:#FFFFFF !important ;
+}
+.footer-line{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    border-radius: 3px;
+}
+
+/* ==================================================== UI Kit css Starts here================ */
+Select:focus{
+    outline: transparent !important;
+}
+.Bankrupt{
+    -webkit-appearance: none;
+}
+.bg-main{
+    background-color:#082571 !important ;
+}
+.dropdown-icon::after{
+    content: "›";
+    position: absolute;
+    top: 30%;
+    right: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background:transparent;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/* ================================================================================= */
+
+/* =======================multi-vehicle information page================================ */
+.barcode{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.barcode a{
+    border: 2px solid #F9E900;
+    border-radius: 17px;
+    padding: 10px 70px;
+}
